@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.buttonIcon {
+  opacity: 0;
+  transform: translateX(20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.cutomButton:hover .buttonIcon {
+  opacity: 1;
+  transform: translateX(0);
+}
+.cutomButton .buttonText {
+  transition: margin-right 0.3s ease;
+  transform: translateX(20px);
+}
+.cutomButton:hover .buttonText {
+  margin-right: 10px;
+  transform: translateX(10px);
+}
